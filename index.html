@@ -31,9 +31,17 @@
           <div>
             <nav>
               <ul class="nav-flex">
-                <li><a class="nav" href="index.html">Agencja</a></li>
-                <li><a class="nav" href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav" href="Kontakt">Kontakt</a></li>
+                <li>
+                  <div class="menu-underline">
+                    <a class="nav" href="index.html">Agencja</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                  <a class="nav" href="Kontakt">Kontakt</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -57,7 +65,17 @@
     <main>
       <div class="background-beautification">
         <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="button-order-service" type="button">Zamów usługe</button>
+        <button data-modal-open class="button-order-service" type="button">
+          Zamów usługe
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button data-modal-close class="button-close" type="button">
+              x
+            </button>
+          </div>
+        </div>
+        <script src="modal.js"></script>
       </div>
       <div class="section">
         <div class="container">
@@ -118,24 +136,37 @@
         <div class="container">
           <h2 class="title-our-job">Czym się zajmujemy</h2>
           <div class="img-first">
-            <img
-              src="images/img.jpg"
-              alt="Programista wpisuje kod"
-              width="370"
-              height="294"
-            />
-            <img
-              src="images/img-a.jpg"
-              alt="Designer z telefonem w ręku"
-              width="370"
-              height="294"
-            />
-            <img
-              src="images/img-b.jpg"
-              alt="Paleta barw na tablecie"
-              width="370"
-              height="294"
-            />
+            <figure class="img-title">
+              <img
+                src="images/img.jpg"
+                alt="Programista wpisuje kod"
+                width="370"
+                height="294"
+              />
+              <figcaption class="img-description">
+                APLIKACJE KOMPUTEROWE
+              </figcaption>
+            </figure>
+            <figure class="img-title">
+              <img
+                src="images/img-a.jpg"
+                alt="Designer z telefonem w ręku"
+                width="370"
+                height="294"
+              />
+              <figcaption class="img-description">APLIKACJE MOBILNE</figcaption>
+            </figure>
+            <figure class="img-title">
+              <img
+                src="images/img-b.jpg"
+                alt="Paleta barw na tablecie"
+                width="370"
+                height="294"
+              />
+              <figcaption class="img-description">
+                ROZWIĄZANIA GRAFICZNE
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>

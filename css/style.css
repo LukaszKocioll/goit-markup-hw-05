@@ -36,9 +36,13 @@
 }
 .nav:hover {
   color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav:focus {
   color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail {
   margin-left: 10px;
@@ -52,6 +56,8 @@
 }
 .mail:hover {
   color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail:focus {
   color: var(--background-hover-color);
@@ -67,6 +73,8 @@
 }
 .phone-number:hover {
   color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-number:focus {
   color: var(--background-hover-color);
@@ -84,6 +92,8 @@
 .button-page-type:hover {
   color: var(--text-button);
   background-color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-page-type:focus {
   color: var(--text-button);
@@ -127,6 +137,8 @@
 .button-order-service:hover {
   color: var(--text-button);
   background-color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-order-service:focus {
   color: var(--text-button);
@@ -208,12 +220,16 @@ body {
 }
 .mail-footer:hover {
   color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-footer:focus {
   color: var(--background-hover-color);
 }
 .phone-number-footer:hover {
   color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-number-footer:focus {
   color: var(--background-hover-color);
@@ -387,6 +403,8 @@ header {
 }
 .icon-social:hover {
   fill: var(--border-projects);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-customers {
   margin: 0 auto 50px auto;
@@ -402,6 +420,8 @@ header {
 .icon-customers:hover {
   fill: var(--background-hover-color);
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-customers-flex {
@@ -423,6 +443,8 @@ header {
   cursor: pointer;
   border-radius: 4px;
   border: var(--background-hover-color) 1px solid;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us {
@@ -456,6 +478,8 @@ header {
 .shadow-portfolio:hover {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .shadow-portfolio:focus {
@@ -466,6 +490,8 @@ header {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .shadow-buttons:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -476,6 +502,8 @@ header {
   border-radius: 50%;
   fill: var(--border-projects);
   background-color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-border-footer {
   border-radius: 50%;
@@ -490,14 +518,121 @@ header {
 .icon-border-footer:hover {
   border-radius: 50%;
   background-color: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hover-email:hover {
   margin: 0 0;
   cursor: pointer;
   fill: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hover-telephone:hover {
   margin: 0 0;
   cursor: pointer;
   fill: var(--background-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  text-align: right;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.hidden-background > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shadow-portfolio {
+  width: 370px;
+}
+.hidden-text {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #2196f3;
+  padding: 49px 45px 49px 24px;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+}
+.hidden-background {
+  position: relative;
+  overflow: hidden;
+}
+.shadow-portfolio:hover .hidden-text {
+  transform: translateY(0);
+}
+.img-title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.img-description {
+  margin-bottom: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  bottom: 0;
+  padding: 27px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+.button-close {
+  margin: 17px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.menu-underline:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 58px;
+  display: block;
+  margin-top: 32px;
+  background-color: var(--background-hover-color);
+  border-radius: 2px;
+}
+.menu-underline {
+  position: relative;
 }
